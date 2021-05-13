@@ -1,8 +1,10 @@
 # rpos
 
 Node.js based ONVIF Camera/NVT software that turns a Raspberry Pi, Windows, Linux or Mac computer into an ONVIF Camera and RTSP Server. It implements the key parts of Profile S and Profile T (http://www.onvif.org). It has special support for the Raspberry Pi Camera and Pimoroni Pan-Tilt HAT
+基于Node.js的ONVIF摄像机/ NVT软件，可将Raspberry Pi，Windows，Linux或Mac计算机转换为ONVIF摄像机和RTSP服务器。 它实现了Profile S和Profile T（http://www.onvif.org）的关键部分。 它对Raspberry Pi相机和Pimoroni Pan-Tilt HAT具有特殊支持。
 
 RPOS won an award in the 2018 ONVIF Open Source Challenge competition.
+RPOS在2018年ONVIF开源挑战赛中获奖。
 
 ## History and Contributors
 
