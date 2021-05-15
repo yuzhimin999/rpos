@@ -78,11 +78,11 @@ Picture of RPOS running on a Pi 3 with the PiMoroni PanTiltHAT and Official Pi C
 For unbuntu 20.04
 
 ### STEP 2 - INSTALL NODEJS AND NPM
-
+安装NODEJS和NPM 
 NOTE: Node.js Version 6.x and 8.x have been tested with RPOS. Only a small amount of testing has been done with Node v10.
 注意：Node.js版本6.x和8.x已通过RPOS测试。 Node v10仅进行了少量测试。 
 
-#### STEP 2.1.a - INSTALL NODE USING NVM
+#### STEP 2.1.a - INSTALL NODE USING NVM （使用NVM安装Node ubuntu 可以不安装）
 
 You may choose to use [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) to install & use a specific version of Node & NPM, such as `nvm install 8` instead of the latest. Follow the instructions on NVM's github page to install & use.
 您可以选择使用[Node Version Manager（NVM）]（https://github.com/nvm-sh/nvm）来安装和使用特定版本的Node＆NPM，例如`nvm install 8`，而不是 最新的。 请按照NVM的github页面上的说明进行安装和使用。 
@@ -90,17 +90,17 @@ You may choose to use [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm
 #### STEP 2.1.b - INSTALL NODE USING APT
 
 Pi and Linux users can install latest versions of Node and NPM together with this command:
-
+Pi和Linux用户可以使用以下命令安装最新版本的Node和NPM： 
 ```
   sudo apt-get install npm
 ```
 
-#### STEP 2.1.c - OTHER METHODS
+#### STEP 2.1.c - OTHER METHODS (其他方法，可以不考虑)
 
 Windows and Mac users can install Node from the nodejs.org web site.
 
 Older Raspbian users (eg those running Jessie) can install NodeJS and NPM with these commands
-
+较老的Raspbian用户（例如，运行Jessie的用户）可以使用以下命令安装NodeJS和NPM 
 ```
   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   sudo apt-get install nodejs
@@ -109,18 +109,20 @@ Older Raspbian users (eg those running Jessie) can install NodeJS and NPM with t
 #### STEP 2.2 - UPDATE NPM
 
 If using [`NVM`](https://github.com/nvm-sh/nvm) to manage your Node.js version, the following will update NPM to the latest supported on your version of Node.js:
+如果使用[`NVM`]（https://github.com/nvm-sh/nvm）管理您的Node.js版本，则以下内容会将NPM更新为您的Node.js版本支持的最新版本：
 
 ```
 nvm install-latest-npm
 ```
 
 Otherwise you can use NPM to update itself with this command:
-
+否则，您可以使用NPM通过以下命令进行自我更新： 
 ```
 sudo npm install -g npm@latest
 ```
 
 Note this seemed to fail first time and needed to be ran twice to get my onto NPM version 6.7.0
+请注意，这似乎是第一次失败，需要运行两次才能进入NPM 6.7.0版 
 
 ### STEP 3 - GET RPOS SOURCE, INSTALL DEPENDENCIES
 
@@ -135,7 +137,7 @@ npm install
 #### 4.1.a
 
 For NPM version 5.2 and up, use the `npx` command to run the 'gulp' script:
-
+第4步-使用GULP将TYPESCRIPT（.ts）编译为JAVASCRIPT（.js） 
 ```
 npx gulp
 ```
@@ -143,14 +145,16 @@ npx gulp
 #### 4.1.b
 
 For older versions of NPM without `npx`, run the gulp script directly:
+对于没有`npx`的旧版NPM，直接运行gulp脚本： 
 
 ```
 ./node_modules/gulp/bin/gulp.js
 ```
 
-### STEP 5 - PICK YOUR RTSP SERVER
+### STEP 5 - PICK YOUR RTSP SERVER （选择您的RTSP服务器 ）
 
 Select & setup an RTSP option for your platform.
+选择并设置适用于您平台的RTSP选项。 
 
 RTSP Server options for Pi / Linux:
 
