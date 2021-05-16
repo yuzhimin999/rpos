@@ -163,6 +163,12 @@ Pi / Linux的RTSP服务器选项：
    RPOS带有用于简单RTSP服务器的预编译ARM二进制文件。 来源位于“ cpp”文件夹中。 （选项1）
 2. mpromonet RTSP Server (option 2)
    mpromonet RTSP服务器（选项2）
+   我的RTSP Server中，使用选项2，但是需要修改，
+   ./v4l2rtspserver/.git/config:	url = https://github.com/mpromonet/v4l2wrapper
+   ./v4l2rtspserver/.gitmodules:	url = https://github.com/mpromonet/v4l2wrapper
+   修改为 
+   ./v4l2rtspserver/.git/config:	url = https://github.com/mpromonet/libv4l2cpp
+   ./v4l2rtspserver/.gitmodules:	url = https://github.com/mpromonet/libv4l2cpp
 3. GStreamer RTSP Server (option 3)
    GStreamer RTSP服务器（选项3）
 
