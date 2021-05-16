@@ -157,18 +157,28 @@ Select & setup an RTSP option for your platform.
 选择并设置适用于您平台的RTSP选项。 
 
 RTSP Server options for Pi / Linux:
+Pi / Linux的RTSP服务器选项：
 
 1. RPOS comes with a pre-compiled ARM binary for a simple RTSP server. The source is in the ‘cpp’ folder. (option 1)
-1. mpromonet RTSP Server (option 2)
-1. GStreamer RTSP Server (option 3)
+   RPOS带有用于简单RTSP服务器的预编译ARM二进制文件。 来源位于“ cpp”文件夹中。 （选项1）
+2. mpromonet RTSP Server (option 2)
+   mpromonet RTSP服务器（选项2）
+3. GStreamer RTSP Server (option 3)
+   GStreamer RTSP服务器（选项3）
 
 RTSP Server options 2 & 3 offer more features, but require additional setup. See instructions below.
 Currently USB camera is only supported by GStreamer RTSP Server
+RTSP服务器选项2和3提供更多功能，但需要其他设置。 请参阅下面的说明。 目前，USB相机仅受GStreamer RTSP服务器支持。
 
 Windows users will need to run their own RTSP Server.
 Mac users can use the ffserver script.
+Windows用户将需要运行自己的RTSP服务器。 Mac用户可以使用ffserver脚本。
 
 Note: The choice of RTSP Server is made in rposConfig.json
+注意：RTSP服务器的选择在rposConfig.json中进行 
+
+
+
 
 #### STEP 5.a - OPTION 1: USING PRE-COMPILED ARM BINARY (deprecated)
 
